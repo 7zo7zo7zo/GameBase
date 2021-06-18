@@ -1,5 +1,3 @@
-package game;
-
 public class Assets {
     private Game game;
 
