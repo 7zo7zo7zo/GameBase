@@ -1,5 +1,3 @@
-package game;
-
 public class Counter {
 	int tally = 0;
 
