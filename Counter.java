@@ -7,7 +7,6 @@ public class Counter {
 
 	public boolean check(int delay) {
 		if (tally % delay == 0) {
-			tally = 0;
 			return true;
 		}
 		return false;
