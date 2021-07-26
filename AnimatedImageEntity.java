@@ -10,7 +10,6 @@ public class AnimatedImageEntity extends ImageEntity {
     public AnimatedImageEntity(Game game, float x, float y, int width, int height, int offset, String path) {
         super(game, x, y, width, height, offset, path);
 
-
         frames = ImageLoader.loadImagesFromSpriteSheet(path, width, height);
     }
 
