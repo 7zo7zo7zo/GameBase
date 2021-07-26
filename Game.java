@@ -97,7 +97,7 @@ public class Game implements Runnable {
 
         // Draw
 
-        assets.render();
+        assets.render(g2);
 
         // End
         bs.show();
@@ -141,10 +141,6 @@ public class Game implements Runnable {
         canvas.setMaximumSize(new Dimension(width, height));
         canvas.setFocusable(false);
         canvas.setBackground(Color.BLACK);
-    }
-
-    public Graphics2D getGraphics2D() {
-        return g2;
     }
 
     public Input getInput() {
