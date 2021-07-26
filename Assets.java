@@ -1,3 +1,5 @@
+import java.awt.*;
+
 public class Assets {
     private Game game;
 
@@ -9,7 +11,7 @@ public class Assets {
 
     }
 
-    public void render() {
+    public void render(Graphics2D g2) {
 
     }
 }
