@@ -4,6 +4,8 @@ public class Entity {
 
     protected Game game;
 
+    protected Graphics2D g2;
+    
     protected float x;
     protected float y;
 
@@ -20,6 +22,7 @@ public class Entity {
 
     public Entity(Game game, float x, float y, int width, int height, int offset) {
         this.game = game;
+        this.g2 = game.getGraphics2D();
         this.x = x;
         this.y = y;
         this.width = width;
@@ -65,7 +68,7 @@ public class Entity {
         hitbox.setLocation((int) x + offset, (int) y + offset);
     }
 
-    public void render(Graphics2D g2) {
+    public void render() {
         // g2.setColor(Color.YELLOW);
         // g2.fillRect(hitbox.x, hitbox.y, hitbox.width, hitbox.height);
     }
