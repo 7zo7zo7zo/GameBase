@@ -11,7 +11,7 @@ public class Assets {
 
     }
 
-    public void render() {
+    public void render(Graphics2D g2) {
 
     }
 }
