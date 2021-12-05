@@ -13,7 +13,7 @@ public class AnimatedImageEntity extends ImageEntity {
         frames = ImageLoader.loadImagesFromSpriteSheet(path, width, height);
     }
 
-    public void render() {
+    public void render(Graphics2D g2) {
         image = frames[currentFrame];
         super.render(g2);
     }
