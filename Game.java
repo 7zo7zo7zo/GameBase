@@ -150,8 +150,4 @@ public class Game implements Runnable {
     public Assets getAssets() {
         return assets;
     }
-    
-    public Graphics2D getGraphics2D() {
-        return g2;
-    }
 }
