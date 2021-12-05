@@ -10,7 +10,7 @@ public class ImageEntity extends Entity {
         image = ImageLoader.loadImage(path);
     }
 
-    public void render() {
+    public void render(Graphics2D g2) {
         g2.drawImage(image, (int) x, (int) y, null);
         super.render(g2);
     }
