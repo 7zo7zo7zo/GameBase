@@ -142,8 +142,4 @@ public class Game implements Runnable {
     public Input getInput() {
         return input;
     }
-
-    public Assets getAssets() {
-        return assets;
-    }
 }
