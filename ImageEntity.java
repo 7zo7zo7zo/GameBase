@@ -5,7 +5,7 @@ public class ImageEntity extends Entity {
 
     protected BufferedImage image;
 
-    public ImageEntity(Game game, float x, float y, int width, int height, int offset, String path) {
+    public ImageEntity(Game game, double x, double y, int width, int height, int offset, String path) {
         super(game, x, y, width, height, offset);
         image = ImageLoader.loadImage(path);
     }
