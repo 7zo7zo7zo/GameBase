@@ -4,13 +4,13 @@ public class Entity {
 
     protected Game game;
 
-    protected float x;
-    protected float y;
+    protected double x;
+    protected double y;
 
     protected int width;
     protected int height;
 
-    protected float angle;
+    protected double angle;
 
     protected int speed;
 
@@ -18,7 +18,7 @@ public class Entity {
 
     protected Rectangle hitbox;
 
-    public Entity(Game game, float x, float y, int width, int height, int offset) {
+    public Entity(Game game, double x, double y, int width, int height, int offset) {
         this.game = game;
         this.x = x;
         this.y = y;
@@ -29,19 +29,19 @@ public class Entity {
         hitbox = new Rectangle((int) x + offset, (int) y + offset, width - 2 * offset, height - 2 * offset);
     }
 
-    public float getX() {
+    public double getX() {
         return x;
     }
 
-    public float getY() {
+    public double getY() {
         return y;
     }
 
-    public float getCenterX() {
+    public double getCenterX() {
         return x + width / 2;
     }
 
-    public float getCenterY() {
+    public double getCenterY() {
         return y + height / 2;
     }
 
@@ -52,13 +52,13 @@ public class Entity {
         return false;
     }
 
-    public void setAngle(float xTarget, float yTarget) {
-        angle = (float) Math.atan2(yTarget - getCenterY(), xTarget - getCenterX());
+    public void setAngle(double xTarget, double yTarget) {
+        angle = Math.atan2(yTarget - getCenterY(), xTarget - getCenterX());
     }
 
     public void linearMove() {
-        x += (float) (speed * Math.cos(angle));
-        y += (float) (speed * Math.sin(angle));
+        x += speed * Math.cos(angle);
+        y += speed * Math.sin(angle);
     }
 
     public void tick() {
