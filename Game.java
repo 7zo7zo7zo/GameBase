@@ -24,6 +24,8 @@ public class Game implements Runnable {
 
     private Input input;
 
+    private Assets assets;
+
     public Game(String title, int width, int height) {
         this.title = title;
         this.width = width;
@@ -36,6 +38,8 @@ public class Game implements Runnable {
 
         setupCanvas();
         setupJFrame();
+
+        assets = new Assets(this);
     }
 
     public void run() {
@@ -75,6 +79,7 @@ public class Game implements Runnable {
 
     public void tick() {
         input.tick();
+        assets.tick();
     }
 
     public void render() {
@@ -92,7 +97,7 @@ public class Game implements Runnable {
         g2.fillRect(0, 0, width, height);
 
         // Draw
-
+        assets.render(g2);
         
 
         // End
