@@ -92,13 +92,11 @@ public class Game implements Runnable {
         g2 = (Graphics2D) bs.getDrawGraphics();
 
         // Clear
-
         g2.setColor(Color.BLACK);
         g2.fillRect(0, 0, width, height);
 
         // Draw
         assets.render(g2);
-        
 
         // End
         bs.show();
