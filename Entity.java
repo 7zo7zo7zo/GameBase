@@ -19,7 +19,7 @@ public class Entity {
     protected Rectangle hitbox;
 
     public Entity(Assets assets, double x, double y, int width, int height, int offset) {
-        this.game = game;
+        this.assets = assets;
         this.x = x;
         this.y = y;
         this.width = width;
