@@ -2,7 +2,7 @@ import java.awt.*;
 
 public class Entity {
 
-    protected Game game;
+    protected Assets assets;
 
     protected double x;
     protected double y;
@@ -18,7 +18,7 @@ public class Entity {
 
     protected Rectangle hitbox;
 
-    public Entity(Game game, double x, double y, int width, int height, int offset) {
+    public Entity(Assets assets, double x, double y, int width, int height, int offset) {
         this.game = game;
         this.x = x;
         this.y = y;
