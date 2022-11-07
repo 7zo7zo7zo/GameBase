@@ -18,8 +18,8 @@ public class Entity {
 
     protected Rectangle hitbox;
 
-    public Entity(Assets assets, double x, double y, int width, int height, int offset) {
-        this.assets = assets;
+    public Entity(Game game, double x, double y, int width, int height, int offset) {
+        super(game);
         this.x = x;
         this.y = y;
         this.width = width;
