@@ -2,8 +2,6 @@ import java.awt.*;
 
 public class Entity {
 
-    protected Assets assets;
-
     protected double x;
     protected double y;
 
